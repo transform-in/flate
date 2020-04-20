@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/_gosMasterCore/page.dart';
+import 'package:shop_app/_core_transform_in/page.dart';
 
 class SettingsPage extends StatelessWidget {
   @override

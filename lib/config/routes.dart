@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:shop_app/_gosMasterCore/menu.dart';
+import 'package:shop_app/_core_transform_in/menu.dart';
 import 'package:shop_app/pages/settings.dart';
 
 Map<String, Widget Function(BuildContext)> getRoutes(BuildContext ctx,

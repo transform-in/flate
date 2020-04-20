@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/config/routes.dart';
 import 'package:shop_app/config/theme.dart';
+import 'package:shop_app/pages/dashboard.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,12 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'GosMaster Flutter Templates',
       theme: implementAndoidTheme(),
-      routes: getRoutes(context),
-      onUnknownRoute: (settings){
+      routes: getRoutes(
+        context,
+        defaultRouteWidget: DashboardPage(),
+      ),
+      onUnknownRoute: (settings) {
         print(settings.name);
         return;
       },
-      onGenerateRoute: (settings){
+      onGenerateRoute: (settings) {
         print(settings.name);
         return;
       },

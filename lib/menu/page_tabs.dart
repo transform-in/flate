@@ -18,36 +18,18 @@ import 'package:shop_app/pages/map.dart';
 */
 
 List<Map<String, Object>> bottomTabsMenu = [
-  {
-    'icon': Icons.dashboard,
-    'name': 'Dashboard',
-    'pageWidget': DashboardPage(),
-    'pageTitle': 'My Dashboard',
-  },
-  {
-    'icon': Icons.star,
-    'name': 'Favorites',
-    'pageWidget': FavoritesPages(),
-    'pageTitle': 'My Favorites',
-  },
-  {
-    'icon': Icons.map,
-    'name': 'Maps',
-    'pageWidget': MapPage(),
-    'pageTitle': 'My Map',
-  },
+  /* Register your page tabs menu here
+* for example:
+*
+* {
+*   'icon': Icons.dashboard,
+*   'name': 'Dashboard',
+*   'pageWidget': DashboardPage(),
+*   'pageTitle': 'My Dashboard',
+* },
+*
+*
+* if you don't want have a sidebar menu, just leave this with blank
+* */
 
-  {
-    'icon': Icons.print,
-    'name': 'Print',
-    'pageWidget': PrintPage(),
-    'pageTitle': 'My Print',
-  },
-
-  {
-    'icon': Icons.category,
-    'name': 'Category',
-    'pageWidget': CategoryPage(),
-    'pageTitle': 'My Category',
-  },
 ];

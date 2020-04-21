@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 Map<String, Map<String, Object>> sidebarMenu = {
 /* Register your sidebar menu here

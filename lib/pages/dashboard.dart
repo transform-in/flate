@@ -1,5 +1,5 @@
+import 'package:flate/_core_transform_in/page.dart';
 import 'package:flutter/material.dart';
-import 'package:shop_app/_core_transform_in/page.dart';
 
 class DashboardPage extends StatelessWidget {
   @override

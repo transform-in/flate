@@ -1,13 +1,12 @@
+import 'package:flate/_core_transform_in/page.dart';
+import 'package:flate/menu/page_tabs.dart';
+import 'package:flate/menu/sidebar.dart';
 import 'package:flutter/material.dart';
-import 'package:shop_app/menu/page_tabs.dart';
-import 'package:shop_app/menu/sidebar.dart';
-import 'package:shop_app/_core_transform_in/page.dart';
 
 class Menu {
   List<Widget> _listOfMenu = [];
   List<BottomNavigationBarItem> _listOfItem = [];
   List<Map<String, Object>> _listOfBottomWidget = [];
-  int _indexOfPage = 0;
 
   final BuildContext context;
 
@@ -93,7 +92,7 @@ class Menu {
 
   List<Map<String, Object>> getBottomTabWidget() {
     _fillListBottomWidget();
-    print('will get: ${_listOfBottomWidget}');
+    print('will get: $_listOfBottomWidget');
     return _listOfBottomWidget;
   }
 
@@ -112,7 +111,7 @@ class Menu {
   }
 
   Widget renderSidebarMenu({String sidebarTitle}) {
-    if (sidebarMenu == null || sidebarMenu.length == 0) return null;
+    if (sidebarMenu == null || sidebarMenu.isEmpty) return null;
 
     return Drawer(
       child: Column(
@@ -127,7 +126,7 @@ class Menu {
     Color backgroundColor,
     BottomNavigationBarType type,
   }) {
-    if (bottomTabsMenu == null || bottomTabsMenu.length == 0) return null;
+    if (bottomTabsMenu == null || bottomTabsMenu.isEmpty) return null;
 
     return BottomNavigationBar(
       items: _buildBottomNavigationBarItem(),

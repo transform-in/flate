@@ -1,7 +1,6 @@
+import 'package:flate/config/routes.dart';
+import 'package:flate/config/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:shop_app/config/routes.dart';
-import 'package:shop_app/config/theme.dart';
-import 'package:shop_app/pages/dashboard.dart';
 
 class Flate {
   final BuildContext _ctx;
@@ -9,7 +8,6 @@ class Flate {
 
   Flate(this._ctx, this._appTitle);
 
-  @override
   Widget buildAndroidPage({Widget defaultRouteWidget}) {
     return MaterialApp(
       title: _appTitle,
@@ -27,6 +25,5 @@ class Flate {
         return;
       },
     );
-    ;
   }
 }

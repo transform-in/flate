@@ -1,6 +1,6 @@
+import 'package:flate/_core_transform_in/flate.dart';
+import 'package:flate/pages/dashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:shop_app/_core_transform_in/flate.dart';
-import 'package:shop_app/pages/dashboard.dart';
 
 void main() => runApp(MyApp());
 

@@ -1,6 +1,6 @@
+import 'package:flate/_core_transform_in/menu.dart';
+import 'package:flate/pages/settings.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:shop_app/_core_transform_in/menu.dart';
-import 'package:shop_app/pages/settings.dart';
 
 Map<String, Widget Function(BuildContext)> getRoutes(BuildContext ctx,
     {Map<String, Map<String, Object>> params, Widget defaultRouteWidget}) {

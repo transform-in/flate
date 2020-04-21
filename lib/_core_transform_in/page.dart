@@ -1,5 +1,6 @@
+import 'package:flate/_core_transform_in/menu.dart';
 import 'package:flutter/material.dart';
-import 'package:shop_app/_core_transform_in/menu.dart';
+
 import 'header.dart';
 
 class PageScreen extends StatefulWidget {
@@ -14,16 +15,15 @@ class PageScreen extends StatefulWidget {
 
   final bool needMainAppBar;
 
-  const PageScreen(
-      {@required this.bodyWidget,
-      @required this.appBarTitle,
-      this.bottomAppBar,
-      this.needMainAppBar = true,
-      this.floatingButton,
-      this.floatingButtonLocation,
-      this.isSubPage = false,
-      this.tabPageParams,
-      this.isParentPage = false});
+  const PageScreen({@required this.bodyWidget,
+    @required this.appBarTitle,
+    this.bottomAppBar,
+    this.needMainAppBar = true,
+    this.floatingButton,
+    this.floatingButtonLocation,
+    this.isSubPage = false,
+    this.tabPageParams,
+    this.isParentPage = false});
 
   @override
   _PageScreenState createState() => _PageScreenState();
@@ -42,7 +42,6 @@ class _PageScreenState extends State<PageScreen> {
       pages = Menu(context).getBottomTabWidget();
       _alreadyLoaded = true;
     }
-
   }
 
   void _selectPage(int index) {
@@ -57,11 +56,11 @@ class _PageScreenState extends State<PageScreen> {
     return Scaffold(
       appBar: widget.needMainAppBar
           ? PageHeader(
-              title: widget.appBarTitle == ''
-                  ? pages[_selectedPageIndex]['title']
-                  : widget.appBarTitle,
-              widget: widget.bottomAppBar,
-            ).build(context)
+        title: widget.appBarTitle == ''
+            ? pages[_selectedPageIndex]['title']
+            : widget.appBarTitle,
+        widget: widget.bottomAppBar,
+      ).build(context)
           : null,
       drawer: appMenu.renderSidebarMenu(),
       body: widget.bodyWidget == null

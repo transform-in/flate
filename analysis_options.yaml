@@ -1,0 +1,27 @@
+include: package:pedantic/analysis_options.yaml
+#include: package:effective_dart/analysis_options.yaml
+
+analyzer:
+  exclude: [build/**]
+linter:
+  rules:
+    - annotate_overrides
+    - library_names
+    - await_only_futures
+    - camel_case_types
+    - cancel_subscriptions
+    - comment_references
+    - close_sinks
+    - constant_identifier_names
+    - control_flow_in_finally
+    - empty_statements
+    - unnecessary_parenthesis
+    - implementation_imports
+    - unnecessary_const
+    - unnecessary_this
+    - unnecessary_overrides
+    - unnecessary_lambdas
+    - unnecessary_brace_in_string_interps
+    - lines_longer_than_80_chars
+    - curly_braces_in_flow_control_structures
+    - slash_for_doc_comments
